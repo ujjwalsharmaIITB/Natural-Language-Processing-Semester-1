@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Tagging App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">POS Tagging App</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="sentenceInput">Enter a sentence:</label>
+                    <input type="text" class="form-control" id="sentenceInput" placeholder="Enter a sentence">
+                </div>
+                <button class="btn btn-primary" id="tagSentenceBtn">Tag Sentence</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div id="posResult">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div id="posTableCard" style="display: none;"> 
+                    <h3>Word-POS Tag Table:</h3>
+                    <table class="table table-bordered" id="posTable">
+                        <thead>
+                            <tr>
+                                <th>Word</th>
+                                <th>POS Tag</th>
+                            </tr>
+                        </thead>
+                        <tbody id="posTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
