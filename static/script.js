@@ -4,7 +4,7 @@ TagsToPOS = {
         ADP : "adposition",
         ADV : "adverb",
         AUX : "auxiliary",
-        CCONJ : "coordinating conjunction",
+        CONJ : "coordinating conjunction",
         DET : "determiner",
         INTJ : "interjection",
         NOUN : "noun",
