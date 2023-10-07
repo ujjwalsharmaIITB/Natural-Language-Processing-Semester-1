@@ -240,9 +240,9 @@ def generateConfusionMatrix(trueList,predictionList):
     plt.colorbar()
     plt.savefig('confusionMatrix.png')
 
-generateClassificationReport(trueList,predictedList)
+# generateClassificationReport(trueList,predictedList)
 
-generateConfusionMatrix(trueList,predictedList)
+# generateConfusionMatrix(trueList,predictedList)
 
 def getPOS_Tagging(untaggedSentence,Last_POS_tag_counts,Last_word_pos_tags,Last_Tag_transition_count):
     untaggedSentence = untaggedSentence.lower()
@@ -250,6 +250,7 @@ def getPOS_Tagging(untaggedSentence,Last_POS_tag_counts,Last_word_pos_tags,Last_
     sentence_t = ['^'] + sentence_t + ['$']
     return ViterbiAlgorithm(sentence_t,Last_POS_tag_counts,Last_word_pos_tags,Last_Tag_transition_count)
 
-promptSentence = 'He likes to eat chocolates'
-getPOS_Tagging(promptSentence,LastPOS_TagCounts,LastPOS_TaggedWords,LastTagTransitionCount)
+
+def getPartOfSpeechTagging(sentence):
+    return getPOS_Tagging(sentence,LastPOS_TagCounts,LastPOS_TaggedWords,LastTagTransitionCount)
 
