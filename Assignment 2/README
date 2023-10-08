@@ -1,0 +1,6 @@
+To run the project
+install all the recommended files (using requirements.txt)
+run
+    flask --app main.py run
+
+check localhost:5000/
