@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Entity Using SVM</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Named Entity Using SVM</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Sentence">Enter a Sentence:</label>
+                    <input type="text" class="form-control" id="Sentence" placeholder="Enter a Sentence">
+                </div>
+                <div class="form-group">
+                    <label for="modelSelect">Select a Model:</label>
+                    <select class="form-control" id="modelSelect">
+                        <option value="linear">SVM with Linear Kernel</option>
+                        <option value="rbf">SVM with RBF kernel</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block" id="predictButton">Predict</button>
+                <div class="mt-3" id="predictionResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
