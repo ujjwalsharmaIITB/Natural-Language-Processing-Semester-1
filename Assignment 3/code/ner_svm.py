@@ -11,7 +11,6 @@ Original file is located at
 ---
 """
 
-! pip install datasets
 
 import nltk
 nltk.download('punkt')
